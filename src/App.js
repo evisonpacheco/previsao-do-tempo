@@ -42,7 +42,7 @@ function App() {
         setIsLoading(1)
         if (res.status === 200) {
           return res.json();
-        } 
+        }
         if (res.status !== 200) {
           alert('Erro! Verifique os dados inseridos');
         }
@@ -59,7 +59,7 @@ function App() {
   return (
     <body>
       <header>
-          <p>PREVISÃO DO TEMPO</p>
+        <p>PREVISÃO DO TEMPO</p>
       </header>
 
       <main>
@@ -68,15 +68,13 @@ function App() {
           <p className="lead">
             Digite o nome da sua cidade no campo abaixo e em seguida clique em pesquisar.
           </p>
-          <div className="row mb-4">
-            <div class="col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                value={city}
-                onChange={(e) => setCity(e.target.value)}
-              />
-            </div>
+          <div class='botao'>
+            <input
+              type="text"
+              class="form-control"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+            />
           </div>
           <button className="btn btn-lg btn-primary" onClick={handleSearch}>
             Pesquisar
@@ -90,30 +88,32 @@ function App() {
 
           {weatherForecast ? (
             <>
-              <div className="mt-4 d-flex align-items-center">
-                <div>
-                  <h3>
-                    Mostrando resultados para a cidade de: <br></br> {weatherForecast.location.name} em: {weatherForecast.location.region}, {weatherForecast.location.country}
-                  </h3>
-                  <img
-                    src={`${weatherForecast.current.condition.icon}`}
-                    alt="Weather Icon"
-                  />
-                  <p className='lead'>A previsão é: {weatherForecast.current.condition.text}</p>
-                  <p className="lead">
-                    Temperatura de: {weatherForecast.current.temp_c}&#8451;
-                  </p>
-                   <p className='lead'>
-                     Umidade de: {weatherForecast.current.humidity}%
-                   </p>
-                </div>
+              <div class='results'>
+                <h3>
+                  Mostrando resultados para a cidade de: <br></br> {weatherForecast.location.name} em: {weatherForecast.location.region}, {weatherForecast.location.country}
+                </h3>
+                <img
+                  src={`${weatherForecast.current.condition.icon}`}
+                  alt="Weather Icon"
+                />
+                <p className='lead'>A previsão é: {weatherForecast.current.condition.text}</p>
+                <p className="lead">
+                  Temperatura Real de: {weatherForecast.current.temp_c}&#8451;
+                </p>
+                <p className='lead'>
+                  Sensação Térmica de: {weatherForecast.current.feelslike_c}&#8451;
+                </p>
+                <p className='lead'>
+                  Umidade de: {weatherForecast.current.humidity}%
+                </p>
+
               </div>
             </>
           ) : null}
         </div>
       </main>
       <footer>
-        <p>&copy; Desenvolvido por <a href='https://github.com/evisonpacheco' target='_blank'><img src="./images/github.svg" alt="Ícone do GitHub"/> Evison</a></p>
+        <p>&copy; Desenvolvido por <a href='https://github.com/evisonpacheco' target='_blank' rel="noreferrer"><img src="./images/github.svg" alt="Ícone do GitHub" /> Evison</a></p>
       </footer>
     </body>
   );

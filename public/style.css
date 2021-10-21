@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  padding: 0;
 }
 html, body{
   height: 100%;
@@ -9,10 +10,6 @@ body{
   place-content: center;
   background-color: #505050;
 }
-.jumbotron{
-  margin: 0;
-  background-color: white;
-}
 header{
   background-color: #3C080A;
   color: #C2A83E;
@@ -21,8 +18,28 @@ header{
   border-radius: 20px 20px 0 0;
   font-size: 1.5rem;
 }
+.jumbotron{
+  margin: 0;
+  background-color: white;
+  text-align: center;
+}
+.jumbotron input{
+  margin: auto;
+}
+.botao{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.form-control{
+  width: 250px;
+}
+.results{
+  text-align: center;
+  margin-top: 1rem;
+}
 header p{
-margin: 1rem 0;
+  margin: 1rem 0;
 }
 footer{
   background-color: #3C080A;
