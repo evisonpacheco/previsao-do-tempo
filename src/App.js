@@ -20,7 +20,6 @@ function App() {
       })
       .then((data) => {
         setIsLoading(false)
-        console.log(data);
         setWeatherForecast(data);
         setCity("")
       });
