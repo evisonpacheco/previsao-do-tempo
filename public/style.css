@@ -1,55 +1,68 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-html, body{
-  height: 100%;
+
+html,
+body {
+    height: 100%;
 }
-body{
-  display: grid;
-  place-content: center;
-  background-color: #505050;
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: #303030;
 }
-header{
-  background-color: #3C080A;
-  color: #C2A83E;
-  text-align: center;
-  min-width: 100%;
-  border-radius: 20px 20px 0 0;
-  font-size: 1.5rem;
+
+header {
+    background-color: #3C080A;
+    color: #C2A83E;
+    text-align: center;
+    min-width: 100%;
+    border-radius: 20px 20px 0 0;
+    font-size: 1.5rem;
 }
-.jumbotron{
-  margin: 0;
-  background-color: white;
-  text-align: center;
+
+.jumbotron {
+    margin: 0;
+    background-color: white;
+    text-align: center;
 }
-.jumbotron input{
-  margin: auto;
+
+.jumbotron input {
+    margin: auto;
 }
-.botao{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
-.form-control{
-  width: 250px;
+
+.form-control {
+    width: 250px;
 }
-.results{
-  text-align: center;
-  margin-top: 1rem;
+
+.results {
+    text-align: center;
+    margin-top: 1rem;
 }
-header p{
-  margin: 1rem 0;
+
+header p {
+    margin: 1rem 0;
 }
-footer{
-  background-color: #3C080A;
-  color: #C2A83E;
-  text-align: center;
-  border-radius: 0 0 20px 20px;
+
+footer {
+    background-color: #3C080A;
+    color: #C2A83E;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
 }
-footer p{
-  margin: 1rem 0;
+
+footer p {
+    margin: 1rem 0;
 }
-footer a{
-  color: #C2A83E;
+
+footer a {
+    color: #C2A83E;
 }
