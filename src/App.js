@@ -3,14 +3,14 @@ import React, { useState } from "react";
 function App() {
   const [city, setCity] = useState("");
   const [weatherForecast, setWeatherForecast] = useState(null);
-  const [isLoading, setIsLoading] = useState(Boolean);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSearch = () => {
     fetch(
       `${process.env.REACT_APP_BASE_URL}current.json?key=${process.env.REACT_APP_KEY}&q=${city}&lang=pt`
     )
       .then((res) => {
-        setIsLoading(1)
+        setIsLoading(true)
         if (res.status === 200) {
           return res.json();
         }
@@ -19,7 +19,7 @@ function App() {
         }
       })
       .then((data) => {
-        setIsLoading(0)
+        setIsLoading(false)
         console.log(data);
         setWeatherForecast(data);
         setCity("")
