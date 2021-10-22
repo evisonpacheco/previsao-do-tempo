@@ -24,3 +24,7 @@ subir um env.exemplo e colocar o .env no gitignore
 
 Quando usar um boolean setar um valor inicial 
 trabalhar com false e true ao invés de 0 e 1 como fiz
+
+Biblioteca moment para formatar data
+
+try catch = tenta fazer algo senão executa o catch = pesquisar depois

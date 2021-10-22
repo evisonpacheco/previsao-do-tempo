@@ -15,7 +15,7 @@ function App() {
           return res.json();
         }
         if (res.status !== 200) {
-          alert('Erro! Verifique os dados inseridos');
+          alert('Erro! Verifique os dados inseridos.');
         }
       })
       .then((data) => {
@@ -47,14 +47,9 @@ function App() {
             />
           </div>
           <button className="btn btn-lg btn-primary" onClick={handleSearch}>
-            Pesquisar
+          {isLoading ?('Pesquisando ...')
+           : ('Pesquisar')}
           </button>
-
-          {isLoading ? (
-            <div className="mt-4 d-flex align-items-center">
-              <h3> Pesquisando ... </h3>
-            </div>
-          ) : null}
 
           {weatherForecast ? (
             <>
