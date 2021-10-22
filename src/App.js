@@ -42,7 +42,7 @@ function App() {
                     <div class='botao'>
                         <input
                             type="text"
-                            class="form-control"
+                            className="form-control"
                             value={city}
                             onChange={(e) => setCity(e.target.value)}
                         />
