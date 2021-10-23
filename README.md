@@ -2,4 +2,4 @@
  Aplicação desenvolvida em React para consultar a previsão do tempo em uma determinada cidade.
  
  Disponível em: <br>
- [previsao-do-tempo.vercel.app](https://previsao-do-tempo.vercel.app)
+ <a href='https://previsao-do-tempo.vercel.app'>previsao-do-tempo.vercel.app</a>
