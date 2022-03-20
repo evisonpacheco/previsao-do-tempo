@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 function App() {
-    const [city, setCity] = useState("")
-    const [weatherForecast, setWeatherForecast] = useState(null)
-    const [isLoading, setIsLoading] = useState(false)
-    const [error400, setError400] = useState(0)
-    const [error666, setError666] = useState(0)
+    const [city, setCity] = useState("");
+    const [weatherForecast, setWeatherForecast] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
+    const [error400, setError400] = useState(null);
+    const [error666, setError666] = useState(null);
 
     function clearResults() {
-        <div></div>
+        // criar função para limpar campos
     }
 
     const handleSearch = () => {
@@ -86,13 +86,13 @@ function App() {
                 ) : null}
 
                 {error400 ? (
-                    <div class="results">
+                    <div class="results--error">
                         <h3 class="results__title">Cidade não encontrada</h3>
                     </div>
                 ) : null}
 
                 {error666 ? (
-                    <div class="results">
+                    <div class="results--error">
                         <h3 class="results__title">Por favor preencha uma cidade</h3>
                     </div>
                 ) : null}

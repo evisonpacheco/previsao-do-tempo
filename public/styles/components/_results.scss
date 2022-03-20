@@ -1,6 +1,6 @@
 @import '../abstract/variables';
 
-.results {
+.results, .results--error {
   background-color: $color-two;
   border-radius: 1rem;
   color: $color-one;
@@ -18,3 +18,6 @@
   }
 }
 
+.results--error {
+  background-color: red;
+}
