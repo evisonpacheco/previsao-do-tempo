@@ -37,7 +37,7 @@
     height: 2rem;
     letter-spacing: 0.2px;
     text-transform: uppercase;
-    width: 6rem;
+    width: 8rem;
 
     &:hover {
       background-color: $color-three;
@@ -48,12 +48,12 @@
 
 @media screen and (min-height: 800px) {
   .main {
-    height: 35rem;
+    min-height: 35rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main {
-    width: 50rem;
+    min-width: 50rem;
   }
 }

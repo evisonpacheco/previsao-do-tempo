@@ -80,7 +80,7 @@ body {
   height: 2rem;
   letter-spacing: 0.2px;
   text-transform: uppercase;
-  width: 6rem;
+  width: 8rem;
 }
 
 .main .main__button:hover {
@@ -90,13 +90,13 @@ body {
 
 @media screen and (min-height: 800px) {
   .main {
-    height: 35rem;
+    min-height: 35rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main {
-    width: 50rem;
+    min-width: 50rem;
   }
 }
 
@@ -120,7 +120,7 @@ body {
   margin: 0 0.2rem 0 0.5rem;
 }
 
-.results {
+.results, .results--error {
   background-color: #5B7DB1;
   border-radius: 1rem;
   color: #1A132F;
@@ -129,12 +129,16 @@ body {
   text-align: center;
 }
 
-.results .results__paragraph {
+.results .results__paragraph, .results--error .results__paragraph {
   background-color: #F7E2E2;
   border: 3px solid #61A4BC;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
+}
+
+.results--error {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
