@@ -1,0 +1,20 @@
+@import '../abstract/variables';
+
+.results {
+  background-color: $color-two;
+  border-radius: 1rem;
+  color: $color-one;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+
+  .results__paragraph {
+    background-color: $color-four;
+    border: 3px solid $color-three;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+

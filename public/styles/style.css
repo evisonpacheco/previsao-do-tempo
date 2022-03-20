@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../../images/background.jpg) no-repeat center fixed;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  border-radius: 25px;
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem auto;
+  max-width: 95%;
+  place-content: center;
+  text-align: center;
+}
+
+.header {
+  background-color: #61A4BC;
+  border-radius: 20px 20px 0 0;
+  color: #1A132F;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.header .header__text {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.main {
+  background-color: white;
+  padding: 1rem;
+}
+
+.main .main__title {
+  border-bottom: 2px solid #5B7DB1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+  padding: 0 0 0.5rem;
+}
+
+.main .main__text {
+  font-weight: 300;
+}
+
+.main .main__textbox {
+  border: 2px solid #1A132F;
+  border-radius: 1rem;
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+  height: 1.2rem;
+  text-align: center;
+}
+
+.main .main__textbox:hover, .main .main__textbox:focus-within {
+  outline: 2px solid #61A4BC;
+}
+
+.main .main__button {
+  background-color: #5B7DB1;
+  color: #1A132F;
+  font-weight: 600;
+  height: 2rem;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  width: 6rem;
+}
+
+.main .main__button:hover {
+  background-color: #61A4BC;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #61A4BC;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer .footer_text {
+  color: #1A132F;
+}
+
+.footer .footer__link {
+  color: #F7E2E2;
+  font-weight: bold;
+}
+
+.footer .footer_image {
+  margin: 0 0.2rem 0 0.5rem;
+}
+
+.results {
+  background-color: #5B7DB1;
+  border-radius: 1rem;
+  color: #1A132F;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.results .results__paragraph {
+  background-color: #F7E2E2;
+  border: 3px solid #61A4BC;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */

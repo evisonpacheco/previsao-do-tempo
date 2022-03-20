@@ -1,0 +1,21 @@
+@import './variables';
+
+html{
+  align-items: center;
+  background: url(../../images/background.jpg) no-repeat center fixed;
+  background-size: cover;
+  display: grid;
+  height: 100%;
+  margin: 0 auto;  
+  padding: 0;
+}
+
+body {
+  border-radius: 25px;
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem auto;
+  max-width: 95%;
+  place-content: center;
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+@import '../abstract/variables';
+
+.main {
+  background-color: white;
+  padding: 1rem;
+
+  .main__title {
+    border-bottom: 2px solid $color-two;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 0.5rem;
+    padding: 0 0 0.5rem;
+  }
+
+  .main__text {
+    font-weight: 300;
+  }
+
+  .main__textbox {
+    border: 2px solid $color-one;
+    border-radius: 1rem;
+    display: block;
+    margin: 1rem auto;
+    font-size: 1rem;
+    height: 1.2rem;
+    text-align: center;
+    
+    &:hover, &:focus-within {
+      outline: 2px solid $color-three;
+    }
+  }
+
+  .main__button {
+    background-color: $color-two;
+    color: $color-one;
+    font-weight: 600;
+    height: 2rem;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    width: 6rem;
+
+    &:hover {
+      background-color: $color-three;
+      cursor: pointer;
+    }
+  }
+}
