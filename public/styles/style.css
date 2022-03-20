@@ -88,6 +88,18 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-height: 800px) {
+  .main {
+    height: 35rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    width: 50rem;
+  }
+}
+
 .footer {
   background-color: #61A4BC;
   border-radius: 0 0 20px 20px;
