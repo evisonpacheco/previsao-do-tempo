@@ -1,0 +1,24 @@
+@import '../abstract/variables';
+
+.footer {
+  background-color: $color-three;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  padding: 1rem 0;
+
+  .footer_text {
+    color: $color-one;
+  }
+
+  .footer__link {
+    color: $color-four;
+    font-weight: bold;
+  }
+  
+  .footer_image {
+    margin: 0 0.2rem 0 0.5rem;
+  }
+}
+
+
+

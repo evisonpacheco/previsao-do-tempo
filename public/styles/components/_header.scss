@@ -1,0 +1,16 @@
+@import '../abstract/variables';
+
+.header {
+  background-color: $color-three;
+  border-radius: 20px 20px 0 0;
+  color: $color-one;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  text-align: center;
+
+  .header__text {
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
